@@ -1,0 +1,55 @@
+{
+  "configVersion": 1,
+  "index": "/PWA/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/PWA/favicon.ico",
+        "/PWA/index.html"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "urls": [
+        "/PWA/assets/icon-128x128.png",
+        "/PWA/assets/icon-144x144.png",
+        "/PWA/assets/icon-192x192.png",
+        "/PWA/assets/icon-512x512.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/PWA/assets/icon-128x128.png": "585c6a582891f631755a40a3fec15b0d2c0165dd",
+    "/PWA/assets/icon-144x144.png": "d53671de040810435a027e1f830893e59b9d2d2b",
+    "/PWA/assets/icon-192x192.png": "2bbe582f088769c2151ba65a179875917921f5f5",
+    "/PWA/assets/icon-512x512.png": "51d441073191406e71c4e3d8f224059d94adee34",
+    "/PWA/favicon.ico": "aa19e53c256959548fdf5fc60b442026dddc2dad",
+    "/PWA/index.html": "b5767da58a57da486ea936ae31a61d8dcedf5067"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}
