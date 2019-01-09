@@ -8,7 +8,7 @@ import { CatImage } from '../Models/CatImage';
 })
 export class ImgCardComponent implements OnInit {
   private image: CatImage = {
-    message: 'Progressive Web Cat',
+    message: 'Cat',
     api: 'https://cataas.com/cat/says/',
     fontsize: 40
   };
