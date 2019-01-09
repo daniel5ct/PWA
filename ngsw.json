@@ -18,8 +18,8 @@
       "updateMode": "prefetch",
       "urls": [
         "/PWA/assets/icon-128x128.png",
-        "/PWA/assets/icon-144x144.png",
-        "/PWA/assets/icon-192x192.png",
+        "/PWA/assets/icon-152x152.png",
+        "/PWA/assets/icon-256x256.png",
         "/PWA/assets/icon-512x512.png"
       ],
       "patterns": []
@@ -27,11 +27,11 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/PWA/assets/icon-128x128.png": "585c6a582891f631755a40a3fec15b0d2c0165dd",
-    "/PWA/assets/icon-144x144.png": "d53671de040810435a027e1f830893e59b9d2d2b",
-    "/PWA/assets/icon-192x192.png": "2bbe582f088769c2151ba65a179875917921f5f5",
-    "/PWA/assets/icon-512x512.png": "51d441073191406e71c4e3d8f224059d94adee34",
-    "/PWA/favicon.ico": "aa19e53c256959548fdf5fc60b442026dddc2dad",
+    "/PWA/assets/icon-128x128.png": "25e80d6b2e828125751120bd13183d2128312225",
+    "/PWA/assets/icon-152x152.png": "dd7c818bb9e69c6082911de967d9b4871bfd53fe",
+    "/PWA/assets/icon-256x256.png": "b27e9e4e9b2e571667e51abffa8b6213563ebfb0",
+    "/PWA/assets/icon-512x512.png": "2a79e3d3eddca36aa4c6528299f36d1f1c14c170",
+    "/PWA/favicon.ico": "372a61ed7cdd553039a5d2ee2d18728a968b68b1",
     "/PWA/index.html": "86db4e1924bca5ec02b9d60108431052537a2fa3"
   },
   "navigationUrls": [
