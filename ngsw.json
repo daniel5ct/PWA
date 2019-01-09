@@ -22,7 +22,9 @@
         "/PWA/assets/icon-256x256.png",
         "/PWA/assets/icon-512x512.png"
       ],
-      "patterns": []
+      "patterns": [
+        "https:\\/\\/cataas\\.com\\/.*"
+      ]
     }
   ],
   "dataGroups": [],
@@ -32,7 +34,7 @@
     "/PWA/assets/icon-256x256.png": "b27e9e4e9b2e571667e51abffa8b6213563ebfb0",
     "/PWA/assets/icon-512x512.png": "2a79e3d3eddca36aa4c6528299f36d1f1c14c170",
     "/PWA/favicon.ico": "372a61ed7cdd553039a5d2ee2d18728a968b68b1",
-    "/PWA/index.html": "86db4e1924bca5ec02b9d60108431052537a2fa3"
+    "/PWA/index.html": "f7b643ba4a1c834e6f4fcf5b86fc8530c2dd2cb8"
   },
   "navigationUrls": [
     {
