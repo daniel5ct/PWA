@@ -22,14 +22,14 @@ export class ImgCardComponent implements OnInit {
   };
 
   ngOnInit() {
-   this.generateSrc();
-  }
-
-  public generateSrc(): void {
-    this.src = this.image.api + this.image.message + '?size=' + this.image.fontsize + '&ts=' + Date.now();
+    this.src = this.image.api + this.image.message + '?size=' + this.image.fontsize;
     if (!navigator.onLine) {
       this.button.text = 'Sorry, you\'re offline';
       this.button.disabled = true;
     }
+  }
+
+  public generateSrc(): void {
+    this.src = this.image.api + this.image.message + '?size=' + this.image.fontsize + '&ts=' + Date.now();
   }
 }
