@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { WebRequestJsonService } from '../../services/WebRequestJsonService';
 import { CatImage } from '../Models/CatImage';
 import { Button } from '../Models/Button';
 
@@ -8,12 +9,18 @@ import { Button } from '../Models/Button';
   styleUrls: ['./img-card.component.less']
 })
 export class ImgCardComponent implements OnInit {
+
+  private readonly dataURL: string = 'data.json';
+
+  private webRequestJsonService: WebRequestJsonService;
+
   private image: CatImage = {
     message: 'Cat',
     api: 'https://cataas.com/cat/says/',
     fontsize: 40
   };
 
+  public featureToggleData: any;
   public src: string;
   public button: Button = {
     text: 'Give me another cat',
@@ -21,7 +28,12 @@ export class ImgCardComponent implements OnInit {
     disabled: false
   };
 
-  ngOnInit() {
+  public constructor(webRequestJsonService: WebRequestJsonService) {
+    this.webRequestJsonService = webRequestJsonService;
+  }
+
+  public ngOnInit() {
+    this.GetFeatureToggleDataFromJson(this.dataURL);
     this.src = this.image.api + this.image.message + '?size=' + this.image.fontsize;
   }
 
@@ -32,5 +44,15 @@ export class ImgCardComponent implements OnInit {
     } else {
       this.src += '&ts=' + Date.now();
     }
+  }
+
+  private GetFeatureToggleDataFromJson(dataURL: string): any {
+    this.webRequestJsonService.RequestJSON<any>(dataURL)
+      .then((result: any) => {
+        this.featureToggleData = result;
+      })
+      .catch((reason: any) => {
+          console.log('Error while fetching data.');
+      });
   }
 }

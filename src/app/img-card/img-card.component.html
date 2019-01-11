@@ -14,3 +14,17 @@
     alt="Cute cat"
     mat-card-image>
 </mat-card>
+<feature-toggle-provider [features]="featureToggleData">
+  <div class="ToogleContainer">
+    <feature-toggle [featureName]="'firstText'">
+      <div class="ToogleSectionFirst">
+        <i class="fas fa-exclamation-triangle fa-5x"></i>
+      </div>
+    </feature-toggle>
+    <feature-toggle [featureName]="'secondText'">
+      <div class="ToogleSectionSecond">
+        <i class="fas fa-cat fa-5x"></i>
+      </div>
+    </feature-toggle>
+  </div>
+</feature-toggle-provider>
